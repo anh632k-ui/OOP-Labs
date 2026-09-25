@@ -1,10 +1,9 @@
 # OOP-Labs - Phương Pháp Phát Triển Phần Mềm Hướng Đối Tượng
 
-Kho lưu trữ toàn bộ các bài thực hành môn **Phương pháp phát triển phần mềm hướng đối tượng (OOAD)**.
+Kho lưu trữ toàn bộ các bài thực hành môn **Phương pháp phát triển phần mềm hướng đối tượng**.
 
-* **Trường:** Đại học Công nghệ TP.HCM (HUTECH)
-* **Sinh viên thực hiện:** Bùi Thế Anh[cite: 4]
-* **Mã số sinh viên:** 1250080004[cite: 4]
+* **Sinh viên thực hiện:** Bùi Thế Anh
+* **Mã số sinh viên:** 1250080004
 * **Môi trường phát triển:** Visual Studio 2022, Microsoft SQL Server, draw.io
 
 ---
