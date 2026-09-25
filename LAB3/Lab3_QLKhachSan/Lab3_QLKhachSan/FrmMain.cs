@@ -58,5 +58,10 @@ namespace Lab3_QLKhachSan
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

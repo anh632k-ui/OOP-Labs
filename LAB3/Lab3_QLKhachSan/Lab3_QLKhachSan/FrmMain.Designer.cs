@@ -25,6 +25,7 @@
             btnTraPhong = new Button();
             btnThongKe = new Button();
             btnThoat = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // lblTitle
@@ -146,12 +147,24 @@
             btnThoat.UseVisualStyleBackColor = false;
             btnThoat.Click += btnThoat_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(391, 109);
+            label1.Name = "label1";
+            label1.Size = new Size(345, 38);
+            label1.TabIndex = 8;
+            label1.Text = "Bùi Thế Anh - 1250080004";
+            label1.Click += label1_Click;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(240, 244, 248);
             ClientSize = new Size(1139, 615);
+            Controls.Add(label1);
             Controls.Add(btnThoat);
             Controls.Add(btnThongKe);
             Controls.Add(btnTraPhong);
@@ -181,5 +194,6 @@
         private System.Windows.Forms.Button btnTraPhong;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Button btnThoat;
+        private Label label1;
     }
 }

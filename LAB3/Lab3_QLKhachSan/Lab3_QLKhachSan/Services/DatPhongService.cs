@@ -121,12 +121,14 @@ namespace Lab3_QLKhachSan.Services
             {
                 try
                 {
+                    // Cập nhật trạng thái phiếu sang 'Đang ở'
                     var c = new SqlCommand("UPDATE PhieuDatPhong SET TrangThai = N'Đang ở', NgayNhanThucTe = @n WHERE SoPhieuDat = @s AND TrangThai = N'Đã đặt'", cn, tx);
                     c.Parameters.AddWithValue("@n", thucTe);
                     c.Parameters.AddWithValue("@s", so);
                     if (c.ExecuteNonQuery() == 0) return KetQuaXuLy.Fail("Phiếu không ở trạng thái có thể nhận phòng.");
 
-                    var u = new SqlCommand("UPDATE Phong SET TrangThai = N'Đang ở' WHERE SoPhong IN (SELECT SoPhong FROM ChiTietDatPhong WHERE SoPhieuDat = @s)", cn, tx);
+                    // Cập nhật trạng thái phòng sang 'Đang sử dụng'
+                    var u = new SqlCommand("UPDATE Phong SET TrangThai = N'Đang sử dụng' WHERE SoPhong IN (SELECT SoPhong FROM ChiTietDatPhong WHERE SoPhieuDat = @s)", cn, tx);
                     u.Parameters.AddWithValue("@s", so);
                     u.ExecuteNonQuery();
 
@@ -143,13 +145,30 @@ namespace Lab3_QLKhachSan.Services
 
         public KetQuaXuLy DanhDauNoShow(string so)
         {
-            try
+            using (var cn = Db.OpenConnection())
+            using (var tx = cn.BeginTransaction())
             {
-                Db.Execute("UPDATE PhieuDatPhong SET TrangThai = N'No-show' WHERE SoPhieuDat = @s AND TrangThai = N'Đã đặt'", new SqlParameter("@s", so));
-                Db.Execute("UPDATE Phong SET TrangThai = N'Trống' WHERE SoPhong IN (SELECT SoPhong FROM ChiTietDatPhong WHERE SoPhieuDat = @s)", new SqlParameter("@s", so));
-                return KetQuaXuLy.Ok("Đã đánh dấu No-show.");
+                try
+                {
+                    // Cập nhật trạng thái phiếu sang 'No-show'
+                    var c = new SqlCommand("UPDATE PhieuDatPhong SET TrangThai = N'No-show' WHERE SoPhieuDat = @s AND TrangThai = N'Đã đặt'", cn, tx);
+                    c.Parameters.AddWithValue("@s", so);
+                    if (c.ExecuteNonQuery() == 0) return KetQuaXuLy.Fail("Phiếu không hợp lệ để đánh dấu No-show.");
+
+                    // Giải phóng phòng về trạng thái 'Trống'
+                    var u = new SqlCommand("UPDATE Phong SET TrangThai = N'Trống' WHERE SoPhong IN (SELECT SoPhong FROM ChiTietDatPhong WHERE SoPhieuDat = @s)", cn, tx);
+                    u.Parameters.AddWithValue("@s", so);
+                    u.ExecuteNonQuery();
+
+                    tx.Commit();
+                    return KetQuaXuLy.Ok("Đã đánh dấu No-show.");
+                }
+                catch (Exception ex)
+                {
+                    try { tx.Rollback(); } catch { }
+                    return KetQuaXuLy.Fail(ex.Message);
+                }
             }
-            catch (Exception ex) { return KetQuaXuLy.Fail(ex.Message); }
         }
     }
 }
