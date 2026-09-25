@@ -13,8 +13,8 @@ Kho lưu trữ toàn bộ các bài thực hành môn **Phương pháp phát tri
 | Lab | Tên Đề Tài / Chủ Đề | Công Nghệ / Deliverables | Trạng Thái |
 | :---: | :--- | :--- | :---: |
 | **[LAB 01](./LAB1/)** | Khảo sát nghiệp vụ & Mô hình hóa Use Case | UML, SRS, Use Case Diagram | ⏳ Cập nhật |
-| **[LAB 02](./LAB2/)** | Thiết kế phân tích (Analysis Class & Sequence) | Class Diagram, Sequence Diagram | ⏳ Cập nhật |
-| **[LAB 03](./LAB3/)** | Hệ thống Quản lý Khách sạn | C# WinForms, SQL Server, ADO.NET, Multi-tier | ✅ Hoàn thành[cite: 1, 14] |
+| **[LAB 02](./LAB2/)** | Thiết kế phân tích (Analysis Class & Sequence) | Class Diagram, Sequence Diagram | ✅ Hoàn thành |
+| **[LAB 03](./LAB3/)** | Hệ thống Quản lý Khách sạn | C# WinForms, SQL Server, ADO.NET, Multi-tier | ✅ Hoàn thành |
 | **[LAB 04](./LAB4/)** | Thiết kế chi tiết & Mẫu thiết kế (Design Patterns) | GoF Patterns, Class Design | ⏳ Cập nhật |
 | **[LAB 05](./LAB5/)** | Tối ưu hóa CSDL & Kiến trúc ứng dụng phân tầng | Transaction, N-Tier Architecture, Trigger/SP | ⏳ Cập nhật |
 | **[LAB 06](./LAB6/)** | Xử lý ngoại lệ, Kiểm thử đơn vị (Unit Test) | Unit Testing, Validation rules | ⏳ Cập nhật |
