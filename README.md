@@ -12,15 +12,15 @@ Kho lưu trữ toàn bộ các bài thực hành môn **Phương pháp phát tri
 
 | Lab | Tên Đề Tài / Chủ Đề | Công Nghệ / Deliverables | Trạng Thái |
 | :---: | :--- | :--- | :---: |
-| **[LAB 01](./LAB1/)** | Khảo sát nghiệp vụ & Mô hình hóa Use Case | UML, SRS, Use Case Diagram | ⏳ Cập nhật |
-| **[LAB 02](./LAB2/)** | Thiết kế phân tích (Analysis Class & Sequence) | Class Diagram, Sequence Diagram | ✅ Hoàn thành |
-| **[LAB 03](./LAB3/)** | Hệ thống Quản lý Khách sạn | C# WinForms, SQL Server, ADO.NET, Multi-tier | ✅ Hoàn thành |
-| **[LAB 04](./LAB4/)** | Thiết kế chi tiết & Mẫu thiết kế (Design Patterns) | GoF Patterns, Class Design | ⏳ Cập nhật |
-| **[LAB 05](./LAB5/)** | Tối ưu hóa CSDL & Kiến trúc ứng dụng phân tầng | Transaction, N-Tier Architecture, Trigger/SP | ⏳ Cập nhật |
-| **[LAB 06](./LAB6/)** | Xử lý ngoại lệ, Kiểm thử đơn vị (Unit Test) | Unit Testing, Validation rules | ⏳ Cập nhật |
-| **[LAB 07](./LAB7/)** | Tích hợp & Kiểm thử chức năng toàn diện | Blackbox/Whitebox Testing, Test Matrix | ⏳ Cập nhật |
-| **[LAB 08](./LAB8/)** | Tái cấu trúc mã nguồn (Refactoring) & Clean Code | SOLID Principles, Refactoring | ⏳ Cập nhật |
-| **[LAB 09](./LAB9/)** | Tổng kết đồ án & Báo cáo hoàn chỉnh môn học | Final Solution, Documentation, Deployment | ⏳ Cập nhật |
+| **[LAB 01](./LAB1/)** | ⏳ Cập nhật | ⏳ Cập nhật  | ⏳ Cập nhật |
+| **[LAB 02](./LAB2/)** | Hệ thống Quản lý Thư Viện |  C# WinForms, SQL Server | ✅ Hoàn thành |
+| **[LAB 03](./LAB3/)** | Hệ thống Quản lý Khách sạn | C# WinForms, SQL Server | ✅ Hoàn thành |
+| **[LAB 04](./LAB4/)** | ⏳ Cập nhật  | ⏳ Cập nhật  | ⏳ Cập nhật |
+| **[LAB 05](./LAB5/)** | ⏳ Cập nhật  | Transaction, ⏳ Cập nhật  | ⏳ Cập nhật |
+| **[LAB 06](./LAB6/)** |⏳ Cập nhật  | ⏳ Cập nhật  | ⏳ Cập nhật |
+| **[LAB 07](./LAB7/)** | ⏳ Cập nhật  | ⏳ Cập nhật | ⏳ Cập nhật |
+| **[LAB 08](./LAB8/)** | ⏳ Cập nhật  | ⏳ Cập nhật  | ⏳ Cập nhật |
+| **[LAB 09](./LAB9/)** | ⏳ Cập nhật  | ⏳ Cập nhật  | ⏳ Cập nhật |
 
 ---
 
