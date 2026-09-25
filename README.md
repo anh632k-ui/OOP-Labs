@@ -16,7 +16,7 @@ Kho lưu trữ toàn bộ các bài thực hành môn **Phương pháp phát tri
 | **[LAB 02](./LAB2/)** | Hệ thống Quản lý Thư Viện |  C# WinForms, SQL Server | ✅ Hoàn thành |
 | **[LAB 03](./LAB3/)** | Hệ thống Quản lý Khách sạn | C# WinForms, SQL Server | ✅ Hoàn thành |
 | **[LAB 04](./LAB4/)** | ⏳ Cập nhật  | ⏳ Cập nhật  | ⏳ Cập nhật |
-| **[LAB 05](./LAB5/)** | ⏳ Cập nhật  | Transaction, ⏳ Cập nhật  | ⏳ Cập nhật |
+| **[LAB 05](./LAB5/)** | ⏳ Cập nhật  | ⏳ Cập nhật  | ⏳ Cập nhật |
 | **[LAB 06](./LAB6/)** |⏳ Cập nhật  | ⏳ Cập nhật  | ⏳ Cập nhật |
 | **[LAB 07](./LAB7/)** | ⏳ Cập nhật  | ⏳ Cập nhật | ⏳ Cập nhật |
 | **[LAB 08](./LAB8/)** | ⏳ Cập nhật  | ⏳ Cập nhật  | ⏳ Cập nhật |
@@ -31,16 +31,16 @@ OOP-Labs/
 │
 ├── README.md               # Tài liệu tổng quan toàn bộ repository
 │
-├── LAB1/                   # Lab 1: Khảo sát & Phân tích Use Case
+├── LAB1/                   
 │   └── README.md
 │
-├── LAB2/                   # Lab 2: Biểu đồ phân tích (Class, Sequence)
+├── LAB2/                   # Lab 2: Hệ thống Quản lý Thư Viện
 │   └── README.md
 │
 ├── LAB3/                   # Lab 3: Hệ thống Quản lý Khách sạn
 │   ├── README.md           # Hướng dẫn chi tiết chạy Lab 3
 │   ├── QLKhachSan.sql      # Kịch bản SQL tạo Database và nạp dữ liệu
-│   └── Lab3_QLKhachSan/    # Source code C# Windows Forms[cite: 1, 13]
+│   └── Lab3_QLKhachSan/    # Source code C# Windows Forms
 │
 ├── LAB4/                   # Lab 4
 │   └── README.md
