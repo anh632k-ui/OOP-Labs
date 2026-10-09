@@ -1,5 +1,5 @@
 
-# LAB5 - QUẢN LÝ CÔNG TY DU LỊCH VĂN HÓA VIỆT
+# LAB5 - QUẢN LÝ CÔNG TY DU LỊCH
 
 ## Thông tin sinh viên
 
