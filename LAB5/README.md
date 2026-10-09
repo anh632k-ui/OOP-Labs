@@ -1,22 +1,6 @@
 
 # LAB5 - QUẢN LÝ CÔNG TY DU LỊCH VĂN HÓA VIỆT
 
-Bài thực hành phân tích, thiết kế và hiện thực hệ thống **Quản lý công ty du lịch Văn Hóa Việt** bằng **C# Windows Forms**, **SQL Server** và các mô hình **UML**.
-
-Hệ thống hỗ trợ quản lý tour du lịch, lịch chuyến khách lẻ, đăng ký khách theo đoàn, phân công hướng dẫn viên, thanh toán, khảo sát khách hàng và thống kê lương.
-
-Ứng dụng được xây dựng theo kiến trúc:
-
-**UI → Service → Data → SQL Server**
-
-Trong đó:
-- **UI:** Giao diện Windows Forms, tiếp nhận và hiển thị dữ liệu.
-- **Service:** Xử lý nghiệp vụ và kiểm tra dữ liệu đầu vào.
-- **Data:** Thực hiện truy vấn và thao tác với cơ sở dữ liệu.
-- **SQL Server:** Lưu trữ và quản lý dữ liệu của hệ thống.
-
----
-
 ## Thông tin sinh viên
 
 - **Sinh viên thực hiện:** Bùi Thế Anh
