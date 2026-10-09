@@ -1,10 +1,3 @@
-﻿/* =====================================================================
-   BÀI 6 - QUẢN LÝ CÔNG TY DU LỊCH VĂN HÓA VIỆT
-   Script tạo CSDL QuanLyCongTyDuLich (SQL Server / LocalDB)
-   - Mọi tour xuất phát và kết thúc tại TP.HCM; điểm dừng đánh số theo thứ tự hành trình.
-   - Khách đoàn: > 12 người, đặt cọc, thanh toán sau tour; khách lẻ: < 12 người, mua vé theo chuyến.
-   - Đề không quy định trường hợp đúng 12 người: CHECK chặn ở cả hai bảng (xem quyết định QD01).
-   ===================================================================== */
 IF DB_ID(N'QuanLyCongTyDuLich') IS NULL CREATE DATABASE QuanLyCongTyDuLich;
 GO
 USE QuanLyCongTyDuLich;
