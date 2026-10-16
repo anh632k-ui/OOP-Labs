@@ -290,8 +290,6 @@ Báo cáo gồm:
 - Windows Forms
 - .NET Framework 4.7.2
 - Microsoft SQL Server
-- ADO.NET
-- UML
 - Visual Studio 2022
 
 ---
