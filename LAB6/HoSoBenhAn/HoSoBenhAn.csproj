@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D953AC5C-20B5-46C0-950F-5017E0343A7C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HoSoBenhAnPrototype</RootNamespace>
+    <AssemblyName>HoSoBenhAnPrototype</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Db.cs" />
+    <Compile Include="Models.cs" />
+    <Compile Include="BenhNhanRepository.cs" />
+    <Compile Include="KhamBenhRepository.cs" />
+    <Compile Include="BenhNhanService.cs" />
+    <Compile Include="KhamBenhService.cs" />
+    <Compile Include="FrmBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBenhNhan.Designer.cs">
+      <DependentUpon>FrmBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhamBenh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhamBenh.Designer.cs">
+      <DependentUpon>FrmKhamBenh.cs</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmBenhNhan.resx">
+      <DependentUpon>FrmBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhamBenh.resx">
+      <DependentUpon>FrmKhamBenh.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
